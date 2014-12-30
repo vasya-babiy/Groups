@@ -1,0 +1,9 @@
+	<div id='name'>
+	<strong>Name:</strong>
+	<%= @user.name %>
+	</div>
+	<%= image_tag @user.avatar.url %><br>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Edit user
+</button>
+<%= render 'modal' %>

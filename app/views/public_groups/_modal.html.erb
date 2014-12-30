@@ -1,0 +1,27 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Edit group</h4>
+      </div>
+      <div class="modal-body">
+	      <%= form_for @public_group, remote: true do |f| %>
+	        <h1> Edit public group </h1>
+						<p>
+							<%= f.label :name %>
+							<%= f.text_field :name %>
+						</p>
+						<p>
+							<%= f.file_field :avatar %>
+						</p>
+						<div class="modal-footer">
+				      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      <%= f.submit 'Save', {class: "btn btn-default"} %>
+			     	</div>
+		    <% end %>
+      </div>
+    </div>
+  </div>
+</div>

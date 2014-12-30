@@ -1,0 +1,11 @@
+<h1> Private group </h1>
+<%= form_for @private_group, html: { multipart: true } do |f| %>
+<p>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</p>
+<p>
+	<%= f.file_field :avatar %>
+</p>
+	<%= f.submit %>
+<% end %>

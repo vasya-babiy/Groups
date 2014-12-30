@@ -1,0 +1,9 @@
+<div id='name'>
+<strong>Name:</strong>
+<%= @public_group.name %>
+</div>
+<%= image_tag @public_group.avatar.url %><br>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Edit group
+</button>
+<%= render 'modal' %>

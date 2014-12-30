@@ -1,0 +1,2 @@
+module PublicGroupsHelper
+end
